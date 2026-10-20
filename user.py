@@ -3,9 +3,9 @@ from database import base
 
 class User(base):
     __tablename__="users"
-    __table_args__ = {"schema":"new_db_my"}
+    # __table_args__ = {"schema":"new_db_my"}
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(Integer, primary_key=True) #, autoincrement=True)
     name = Column(String(100))
     email = Column(String(100))
     age = Column(String(100))
@@ -17,7 +17,7 @@ class User(base):
 
 class Student_info(base):
     __tablename__="student_info"
-    __table_args__ = {"schema":"new_db_my"}
+    # __table_args__ = {"schema":"new_db_my"}
 
     name = Column(String(100))
     father_name = Column(String(100))
