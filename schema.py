@@ -4,10 +4,10 @@ class UserCreateRequest(BaseModel):
     name: str
     email: str
     age: int
-    email1: str
-    age1: int
-    email2: str
-    age2: int
+    address: str
+    marks: int
+    department: str
+    roll: int
 
 
 class SrudentCreateRequest(BaseModel):

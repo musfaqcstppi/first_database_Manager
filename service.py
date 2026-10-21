@@ -11,10 +11,10 @@ class UserService:
         user = User(name= user_payload.name,
                     email = user_payload.email,
                     age = user_payload.age,
-                    email1 = user_payload.email,
-                    age1 = user_payload.age,
-                    email2 = user_payload.email,
-                    age2 = user_payload.age)
+                    address = user_payload.address,
+                    marks = user_payload.marks,
+                    department = user_payload.department,
+                    roll = user_payload.roll)
         self.user_repository.create_user(db, user)
 
 

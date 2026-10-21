@@ -9,10 +9,10 @@ class User(base):
     name = Column(String(100))
     email = Column(String(100))
     age = Column(String(100))
-    email1 = Column(String(100))
-    age1 = Column(String(100))
-    email2 = Column(String(100))
-    age2 = Column(String(100))
+    address = Column(String(100))
+    marks = Column(String(100))
+    department = Column(String(100))
+    roll = Column(String(100))
 
 
 class Student_info(base):
